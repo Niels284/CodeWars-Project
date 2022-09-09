@@ -1,0 +1,10 @@
+function shortLongShort(string $s1, string $s2): string
+{
+  $string1 = strlen($s1);
+  $string2 = strlen($s2);
+  if ($string1 > $string2) {
+    return $s2 . $s1 . $s2;
+  } else {
+    return $s1 . $s2 . $s1;
+  }
+}
